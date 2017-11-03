@@ -29,9 +29,9 @@ chk_user()
 chk_user
                                 apt-get update
                                 apt-get upgrade -y
-                                apt-get -y --force-yes install apache2 build-essential wget perl openssl 
-                                apt-get -y --force-yes install nagios-plugins nagios3 nagios-plugins-basic nagios-plugins-extra nagios-snmp-plugins nagios-nrpe-plugin nagios3-core nagios-plugins-standard nagios3-cgi nagios-plugins-contrib
-                                apt-get -y --force-yes install libssl-dev openssh-server openssh-client ntpdate snmp smbclient libldap-2.4-2 libldap2-dev  unzip
+                                apt-get -y  install apache2 build-essential wget perl openssl 
+                                apt-get -y  install nagios-plugins nagios3 nagios-plugins-basic nagios-plugins-extra nagios-snmp-plugins nagios-nrpe-plugin nagios3-core nagios-plugins-standard nagios3-cgi nagios-plugins-contrib
+                                apt-get -y  install libssl-dev openssh-server openssh-client ntpdate snmp smbclient libldap-2.4-2 libldap2-dev  unzip
                                 sleep 2
 
                                 sed -i 's/check_external_commands=0/check_external_commands=1/g' /etc/nagios3/nagios.cfg
