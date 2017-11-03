@@ -1,5 +1,5 @@
 #!/usr/bin/expect
-spawn sh nagios2/naginstall.sh
+spawn sh naginstall.sh
 expect "Geographic area" 
 send "2\r"
 expect "Time Zone" 
