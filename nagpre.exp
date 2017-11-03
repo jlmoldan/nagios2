@@ -1,9 +1,9 @@
 #!/usr/bin/expect
 spawn sh /nagios2/naginstall.sh
-expect "Geographic area" 
-send "2\r"
-expect "Time Zone" 
-send "37\r"
+
+
+spawn sh /nagios2/naginstall2.sh
+
 expect "General type of mail" 
 send "1\r"
 expect "Nagios web administration" 
