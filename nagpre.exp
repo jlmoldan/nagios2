@@ -5,8 +5,13 @@ spawn sh /nagios2/naginstall.sh
 spawn sh /nagios2/naginstall2.sh
 
 expect "General type of mail" 
-send "1\r"
+#send "1\r"
+#expect "Nagios web administration" 
+#send "PassWord\r"
+#expect "password" 
+#send "PassWord\r"
+send "1"
 expect "Nagios web administration" 
-send "PassWord\r"
+send "PassWord"
 expect "password" 
-send "PassWord\r"
+send "PassWord"
