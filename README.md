@@ -14,9 +14,9 @@ RUN git clone https://github.com/jlmoldan/nagios2.git<br>
 CMD /etc/init.d/apache2 start && /etc/init.d/nagios3 start<br> 
 
 # Next Steps
-after the build is complete enter the container (docker run -it %imagename%)
-run the two scripts and answer the questions.
-sh /nagios2/naginstall.sh
-sh /nagios2/nagnstall2.sh
- and now hopefully it runs.
+after the build is complete enter the container (docker run -it %imagename%)<br> 
+run the two scripts and answer the questions.<br> 
+sh /nagios2/naginstall.sh<br> 
+sh /nagios2/nagnstall2.sh<br> 
+ and now hopefully it runs.<br> 
 
