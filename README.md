@@ -14,7 +14,7 @@ RUN chmod +x nagios2/*  <br>
 
 
 # Next Steps
-Build the docker image with:   docker build -t nagios . --no-cache <br>
+Build the docker image with:   docker build -t nervios . --no-cache <br>
 after the build is complete enter the container (docker run -it %imagename%) <br> 
 run the two scripts and answer the questions. <br> 
 sh nagios2/naginstall.sh <br> 
