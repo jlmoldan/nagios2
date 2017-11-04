@@ -1,6 +1,5 @@
 # nagios2<br>
- Create Dockerfile<br>
- docker build -t nagios . --no-cache<br>
+ Create a Dockerfile<br>
 
 ######Dockerfile######<br>
 FROM ubuntu <br> 
@@ -14,6 +13,7 @@ RUN git clone https://github.com/jlmoldan/nagios2.git<br>
 CMD /etc/init.d/apache2 start && /etc/init.d/nagios3 start<br> 
 
 # Next Steps
+Build the docker image with:   docker build -t nagios . --no-cache<br>
 after the build is complete enter the container (docker run -it %imagename%)<br> 
 run the two scripts and answer the questions.<br> 
 sh /nagios2/naginstall.sh<br> 
