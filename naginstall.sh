@@ -32,7 +32,7 @@ chk_user
 #rm -rf /etc/init.d/nagios3 
                                 apt-get update
                                 apt-get upgrade -y
-                                apt-get -y  install apache2 build-essential wget perl openssl 
+                                apt-get -y  install apache2 build-essential wget perl openssl supervisor
                                 apt-get -y  install nagios-plugins 
                                 apt-get -y  install nagios3 
                                 apt-get -y  install nagios-plugins-basic nagios-plugins-extra nagios-snmp-plugins nagios-nrpe-plugin nagios3-core nagios-plugins-standard nagios3-cgi nagios-plugins-contrib
@@ -51,11 +51,13 @@ chk_user
 
 
 # Try to make them start
-touch /start.sh
-echo "#!/bin/bash" >> /start.sh
-echo "service apache2 start" >> /start.sh
-echo "service nagios3 start" >> /start.sh
-chmod +x /start.sh
+#touch /start.sh
+#echo "#!/bin/bash" >> /start.sh
+#echo "service apache2 start" >> /start.sh
+#echo "service nagios3 start" >> /start.sh
+#chmod +x /start.sh
+cp /nagios2/supervisord /usr/bin/supervisord
+chmod +x /usr/bin/supervisord
 
 
 
