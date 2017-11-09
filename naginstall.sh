@@ -27,6 +27,9 @@ chk_user()
 
 ### Ubuntu/Debian type servers. ####
 chk_user
+# Remove crap to get Dockerfile to work
+rm -rf /etc/init.d/apache2 
+rm -rf /etc/init.d/nagios3 
                                 apt-get update
                                 apt-get upgrade -y
                                 apt-get -y  install apache2 build-essential wget perl openssl 
