@@ -33,18 +33,10 @@ rm -rf /etc/init.d/nagios3
                                 apt-get update
                                 apt-get upgrade -y
                                 apt-get -y  install apache2 build-essential wget perl openssl 
-                               
-                                exit 0
-
- 
                                 apt-get -y  install nagios-plugins 
-                                sleep 2
                                 apt-get -y  install nagios3 
-                                sleep 2  
                                 apt-get -y  install nagios-plugins-basic nagios-plugins-extra nagios-snmp-plugins nagios-nrpe-plugin nagios3-core nagios-plugins-standard nagios3-cgi nagios-plugins-contrib
                                 apt-get -y  install libssl-dev openssh-server openssh-client ntpdate snmp smbclient libldap-2.4-2 libldap2-dev  unzip
-                                sleep 2
-
                                 sed -i 's/check_external_commands=0/check_external_commands=1/g' /etc/nagios3/nagios.cfg
 
                                 /usr/sbin/usermod -a -G www-data nagios
