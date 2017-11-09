@@ -28,8 +28,8 @@ chk_user()
 ### Ubuntu/Debian type servers. ####
 chk_user
 # Remove crap to get Dockerfile to work
-rm -rf /etc/init.d/apache2 
-rm -rf /etc/init.d/nagios3 
+#rm -rf /etc/init.d/apache2 
+#rm -rf /etc/init.d/nagios3 
                                 apt-get update
                                 apt-get upgrade -y
                                 apt-get -y  install apache2 build-essential wget perl openssl 
@@ -48,5 +48,17 @@ rm -rf /etc/init.d/nagios3
                                 sleep 2
                                 IP=`/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
                                 echo -e "\n\tNow Nagios is ready to be used via: http://$IP/nagios3"
-                                exit 0
+
+
+# Try to make them start
+touch /start.sh
+echo "service apache2 start" >> /start.sh
+echon "service nagios3 start" >> /start.sh
+chmod +x /start.sh
+
+
+
+
+
+exit 0
 
