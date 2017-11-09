@@ -53,7 +53,7 @@ chk_user
 # Try to make them start
 touch /start.sh
 echo "service apache2 start" >> /start.sh
-echon "service nagios3 start" >> /start.sh
+echo "service nagios3 start" >> /start.sh
 chmod +x /start.sh
 
 
