@@ -51,13 +51,13 @@ chk_user
 
 
 # Try to make them start
-#touch /start.sh
-#echo "#!/bin/bash" >> /start.sh
-#echo "service apache2 start" >> /start.sh
-#echo "service nagios3 start" >> /start.sh
-#chmod +x /start.sh
-cp /nagios2/supervisord /usr/bin/supervisord
-chmod +x /usr/bin/supervisord
+touch /start.sh
+echo "#!/bin/bash" >> /start.sh
+echo "service apache2 start" >> /start.sh
+echo "service nagios3 start" >> /start.sh
+chmod +x /start.sh
+#cp /nagios2/supervisord /usr/bin/supervisord
+#chmod +x /usr/bin/supervisord
 
 
 
