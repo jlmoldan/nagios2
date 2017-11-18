@@ -12,22 +12,22 @@ apt-get install --yes vim net-tools apt-utils
 #### Installation Starts ######
 ########################################################
 
-chk_user()
-{
-        if [ $(whoami) != "root" ]
-        then
-                echo -e "\n\t\033[44;37;5m###### WARNING ######\033[0m"
-                echo -e "\t${txtylw}${txtbld}Sorry ${txtgrn}$(whoami)${txtrst}${txtylw}${txtbld}, you must login as root user to run this script.${txtrst}"
-                echo -e "\t${txtylw}${txtbld}Please become root user using 'sudo -s' and try again.${txtrst}"
-                echo -e
-                echo -e "\t${txtred}${txtbld}Quitting Installer.....${txtrst}\n"
-                sleep 3
-        exit 1
-        fi
-}
+##chk_user()
+##{
+    ##    if [ $(whoami) != "root" ]
+     ##   then
+     ##           echo -e "\n\t\033[44;37;5m###### WARNING ######\033[0m"
+    ####            echo -e "\t${txtylw}${txtbld}Sorry ${txtgrn}$(whoami)${txtrst}${txtylw}${txtbld}, you must login as root user to run this script.${txtrst}"
+    ##            echo -e "\t${txtylw}${txtbld}Please become root user using 'sudo -s' and try again.${txtrst}"
+     ##           echo -e
+     ##           echo -e "\t${txtred}${txtbld}Quitting Installer.....${txtrst}\n"
+      ##          sleep 3
+      ##  exit 1
+      ##  fi
+##}
 
 ### Ubuntu/Debian type servers. ####
-chk_user
+##chk_user
 # Remove crap to get Dockerfile to work
 #rm -rf /etc/init.d/apache2
 #rm -rf /etc/init.d/nagios3
