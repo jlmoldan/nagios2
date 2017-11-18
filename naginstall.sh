@@ -4,6 +4,7 @@
 ### JasonMoldan
 
 ### pre work
+export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get install --yes vim net-tools apt-utils
 
