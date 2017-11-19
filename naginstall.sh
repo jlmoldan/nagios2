@@ -4,7 +4,8 @@
 ### JasonMoldan
 
 ### pre work
-export DEBIAN_FRONTEND=noninteractive
+#export DEBIAN_FRONTEND=noninteractive
+echo " STARTING INSTALL OF NAGIOS ##########################################################################################################################################################################################################"
 apt-get update
 apt-get install --yes vim net-tools apt-utils
 
