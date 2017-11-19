@@ -52,6 +52,6 @@ apt-get install --yes vim net-tools apt-utils
 
 
 ### ADD HERE - git clone and pump the hosts files into place
-cp Calavera2/nervios/*.cfg /etc/nagios3/conf.d/
+#cp Calavera2/nervios/*.cfg /etc/nagios3/conf.d/
 
 exit 0
